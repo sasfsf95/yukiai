@@ -3,7 +3,7 @@ import google.generativeai as genai
 import os
 
 # === Gemini API key ===
-GOOGLE_API_KEY = "AIzaSyBh-gQTCd4NrtSeO534KM8FznaMdDwXI94"  # 🔁 Replace with your actual key
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # === Gemini model (Gemini 2.0 Flash) ===
